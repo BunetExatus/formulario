@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+    
+        input{
+            border-radius: 14px;
+            padding: 10px;
+            margin: 10px;
+            background-color: black;
+            color: white;
+            font-weight: 700;
+            border: solid cornflowerblue;
+        }
+        label{
+            font-size: large;
+            font-weight: 700;
+        }
+       textarea{
+           width: 400px;
+           height: 200px;
+           border-radius: 15px;
+           border: solid gold;
+       }
+       form{
+           text-align: center;
+           background-color:Tomato;
+           color:white;
+           font-weight: bold;
+          
+       }
+       #btnsubmit{
+           border-radius: 15px;
+           background-color: gold; 
+           color:rgb(39, 173, 39);  
+           font-weight: 700;        
+       }
+       #btnsubmit:hover{
+           color:brown;
+       }
+       form h1{
+           background-attachment: fixed;
+           background-color: brown;
+           border-radius: 15px;
+       }
+       body{
+            background-color:white;
+            color: blueviolet;
+            text-align: center;
+            font-size: larger;
+            font-weight:700;
+        }
+        body:hover{
+            background-color:black;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: xx-large;
+            color:brown; 
+        }
+        button:hover{
+            background-color:turquoise;
+            font-size: larger;
+            font-weight:800;
+            box-decoration-break: slice;
+
+        }
+        button{
+            background-color: #7E19C1;
+            padding: 15px 15px;
+            font-size: larger;
+        }
+        span{
+            color:#7E19C1;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        span.color{
+            color: turquoise;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="mailto:bunetexatus509@gmail.com" enctype="text/plain"> <!--enctype para arrumar a mensagem enviada para o email servidor-->
+        <h1>Trabalhe Conosco</h1>
+        <Label for="txtnome">Nome Completo:&nbsp;</Label>
+        <input type="text" placeholder="Preencha o nome completo" required/> <br>
+        
+        <label for="txtend"> Endereço:&nbsp;</label>
+        <input name="txtend" type="text" placeholder="Preencha o endereço completo" required/><br>
+
+        <label for="txtcida"> Cidade:&nbsp;</label> 
+        <input name="txtcida" type="text" value="SÃO PAULO" required /><br>
+        
+        <label for="txtuf">UF &nbsp;</label>
+        <select name="txtuf" id="">
+            <option value="AC">AC</option>
+            <option value="AM">AM</option>
+            <option value="AL">AL</option>
+            <option value="AP">AP</option>
+            <option value="BA">BA</option>
+            <option value="CE">CE</option>
+            <option value="ES">ES</option>
+            <option value="GO">GO</option>
+            <option value="AC">MA</option>
+            <option value="MG">MG</option>
+            <option value="MT">MT</option>
+            <option value="MS">MS</option>
+            <option value="PA">PA</option>
+            <option value="PB">PB</option>
+            <option value="PE">PE</option>
+            <option value="PI">PI</option>
+            <option value="PR">PR</option>
+            <option value="RJ">RJ</option>
+            <option value="RN">RN</option>
+            <option value="RO">RO</option>
+            <option value="RR">RR</option>
+            <option value="RS">RS</option>
+            <option value="SC">SC</option>
+            <option value="SE">SE</option>
+            <option value="SP" selected>SP</option>
+            <option value="TO">TO</option> <br>
+            <span> &nbsp;&nbsp;&nbsp;</span>
+            <LAbel for="txtcep"> CEP:&nbsp;</LAbel>
+            <input name="txtcep" type="text" placeholder="Preencha o CEP"> <br>
+
+            <label for="txtsexo"> SEXO &nbsp;</label>
+            <input name="txtsexo" type="radio" value="F" checked /> FEMININO
+            <input name="txtsexo" type="radio" value="M" checked /> MASCULINO <br>
+            
+            <label for="txtsenha"> Cadastra sua senha:&nbsp;&nbsp;</label> 
+            <input name="txtsenha" type="password" placeholder="Preencha a sua senha">
+            
+        </select> <br>
+        <br> <!-- Quebra de linha -->
+        <label>Digite seu comentário.</label>
+        <br> <!-- Quebra de linha -->
+        <textarea placeholder="Digite seu comentário." name="comentario"></textarea>
+        <br> <!-- Quebra de linha -->
+        <input type="file" id="myFile" name="filename" required> <br>
+        <button type="submit" id="btnsubmit">Enviar</button>
+        <input type="reset">
+
+    </form>
+    <h2>What Can JavaScript Do?</h2>
+
+    <p>JavaScript can change HTML attribute values.</p>
+    
+    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+    <h1><span>Javascript</span> is on of a pretties funny language of computer science <span class="color">I really love it!</span></h1>
+    
+    <button onclick="document.getElementById('myImage').src='myImage/pic_bulbon.gif'">Turn on the light</button>
+    
+    <img id="myImage" src="pic_bulboff.gif" style="width:100px">
+    
+    <button onclick="document.getElementById('myImage').src='myImage/pic_bulboff.gif'">Turn off the light</button> <br> <br>
+    
+    <div class="credit">created by <span>Bunet Exatus </span> | all rights reserved!</div>
+    
+</body>
+</html>
